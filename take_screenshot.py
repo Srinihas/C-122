@@ -27,8 +27,8 @@ while True:
         lm_list.append(lm)
 
             #array to hold true or false if finger is folded    
-        finger_fold_status =[]
-        for tip in finger_tips:
+      finger_fold_status =[]
+      for tip in finger_tips:
         #getting the landmark tip position and drawing blue circle
           x,y = int(lm_list[tip].x*w), int(lm_list[tip].y*h)
           cv2.circle(img, (x,y), 15, (255, 0, 0), cv2.FILLED)
